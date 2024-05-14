@@ -1,11 +1,15 @@
 /*
 Lauren Acosta, cen 4802, 5/13/2024
-My program recursively returns the nth term in the Fibonacci sequence.
-My main method passes int 10 as an argument and outputs the 1oth term in Fibonacci sequence.
+My program recursively returns the nth term in the Fibonacci sequence. 
+My main method passes int 10 as an argument and outputs the 10th term in the Fibonacci sequence.
 */
 public class Fibonacci {
-
-    // Recursive method to calculate the nth term in the Fibonacci sequence
+    /**
+     * Calculates the nth term in the Fibonacci sequence recursively.
+     *
+     * @param n the index of the term to calculate
+     * @return the nth term in the Fibonacci sequence
+     */
     public static int fibonacci(int n) {
         if (n <= 1) {
             return n;
