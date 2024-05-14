@@ -1,0 +1,27 @@
+/*
+Lauren Acosta, cen 4802, 5/13/2024
+My program recursively returns the nth term in the Fibonacci sequence.
+My main method passes int 10 as an argument and outputs the 1oth term in Fibonacci sequence.
+*/
+public class Fibonacci {
+
+    // Recursive method to calculate the nth term in the Fibonacci sequence
+    public static int fibonacci(int n) {
+        if (n <= 1) {
+            return n;
+        } else {
+            return fibonacci(n - 1) + fibonacci(n - 2);
+        }
+    }
+
+    /**
+     * Main method to call the fibonacci method and output the result.
+     *
+     * @param args command-line arguments (not used)
+     */
+    public static void main(String[] args) {
+        int n = 10;
+        int nthTerm = fibonacci(n);
+        System.out.println("The " + n + "th term of the Fibonacci sequence is " + nthTerm + ".");
+    }
+}
